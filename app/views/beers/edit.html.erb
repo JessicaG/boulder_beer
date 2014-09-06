@@ -1,0 +1,15 @@
+<h2>Edit yo beer!</h2>
+<%= form_for @beer do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :beer_type %>
+  <%= f.text_field :beer_type %>
+  <%= f.label :abv, "ABV%" %>
+  <%= f.text_field :abv %>
+  <%= f.label :ibu, "IBU" %>
+  <%= f.text_field :ibu %>
+  <%= f.label :image, "ImageURL" %>
+  <%= f.text_field :image %>
+  <%= f.submit "Update Beer" %>
+
+<% end %>
